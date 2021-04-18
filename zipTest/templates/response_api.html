@@ -1,0 +1,30 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zipseil-Test</title>
+</head>
+<body>
+  <table class="table-bordered" border="1">
+   <tr>
+       <pre>
+{#            {{ pulls | pprint }}#}
+           Merge pull-requests репозитории {{ repos_url | pprint }}
+
+           Название проектов {{ name_proj | pprint}}
+
+           Количество звезд проектов {{ stars_user | pprint }}
+
+           Ссылка на проекты на Гитхабе {{ html_url | pprint}}
+
+           Комментарии {{ comments | pprint}}
+
+           Не смерженные пулл реквэсты {{ no_merge_pulls_url | pprint }}
+
+       </pre>
+
+  </tr>
+ </table>
+</body>
+</html>
