@@ -31,10 +31,6 @@ def smth(request):
     return render(request, 'smth.html', {'form': form})
 
 # def info_user(request):
-#     username = 'AntonBalmakov'
-#     token = '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'
-#     aunt_user = requests.get("https://api.github.com/users/", auth=(username, token)).json()
-#
 #     if request.method == 'POST':
 #         form = GitForm(request.POST)
 #         form.is_valid()
